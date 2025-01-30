@@ -1,5 +1,6 @@
 import * as THREE from 'three';
 import { OrbitControls } from 'three/examples/jsm/controls/OrbitControls';
+import { mx_bilerp_1 } from 'three/src/nodes/materialx/lib/mx_noise.js';
 
 
 const scene = new THREE.Scene();
@@ -266,10 +267,10 @@ for (let i = 0; i < 7; i++) {
 }
 
 // TODO: Transform cubes
-const translation_T1 = translationMatrix(l, l, 0); // Move left corner to origin
+const translation_T1 = translationMatrix(l, 1.5*l, 0); // Move left corner to origin
 let rotation_T2 = rotationMatrixZ(10 * (Math.PI / 180)); // Rotate by 10 degrees in radian around Z axis
-const translation_T3 = translationMatrix(-l, -l, 0);
-const translation_T4 = translationMatrix(0, 2*l, 0); // Translate 2l units in the y direction
+const translation_T3 = translationMatrix(-l, -1.5*l, 0);
+const translation_T4 = translationMatrix(0, 3*l, 0); // Translate 2l units in the y direction
 
 let animation_time = 0;
 let delta_animation_time;
