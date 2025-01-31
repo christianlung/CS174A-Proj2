@@ -8,6 +8,9 @@ In this assignment, the goals are:
 4. Draw the outline of the cube instead of the faces. (2.5pts)
 5. Add user input via pressing specific keys. We will switch between wireframe and solid view of the cubes. (5pts)
    
+### My Final Result Visualized
+https://github.com/user-attachments/assets/3c1cd08b-0546-4cb2-9399-621d60e7a2ee
+
 
 
 ### Data structure of a cube
